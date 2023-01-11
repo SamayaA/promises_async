@@ -2,8 +2,7 @@ import GameSavingLoader from './GameSavingLoader';
 
 const main = async () => {
   try {
-    const inst = await GameSavingLoader.load();
-    const obj = JSON.parse(inst);
+    const obj = await GameSavingLoader.load();
     console.log(obj);
   } catch (error) {
     console.log(error);
